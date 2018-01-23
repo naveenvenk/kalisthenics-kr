@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="students">
+<head>
+    <title>Singleton services</title>
+    <script src="../../angular-1.5.8/angular.js"></script>
+    <script src="StudentService.js"></script>
+    <script src="StudentController.js"></script>
+</head>
+<body>
+<div ng-controller="GirlController">
+    <b>List of girls</b>
+    <br>
+    <input ng-model="girl">
+    <br>
+    <div>
+        <button ng-click="addGirl()">
+            Add girl
+        </button>
+    </div>
+</div>
+<div ng-controller="BoyController">
+    <b>List of boys</b>
+    <br>
+    <input ng-model="boy">
+    <br>
+    <div>
+        <button ng-click="addBoy()">
+            Add boy
+        </button>
+    </div>
+</div>
+<div ng-controller="DisplayController">
+    <br>
+    <br>
+    <div>
+        <button ng-click="displayStudents()">
+            Display students
+        </button>
+    </div>
+</div>
+</body>
+</html>
